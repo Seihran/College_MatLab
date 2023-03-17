@@ -1,0 +1,10 @@
+SR=100;
+t=1/SR;
+hz=8;
+seconds=1;
+T = (0:t:hz*seconds);
+s=3+sin(2*pi*T);
+TT=0:t/hz:seconds;
+plot(TT,s);
+xlabel('Displacement');
+ylabel('Time');
